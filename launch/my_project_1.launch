@@ -1,0 +1,16 @@
+<launch>
+  <!--
+    Launch QR decoder, ring detector and main controller (tt.py).
+
+    Instructions:
+      - Ensure this repository is inside a catkin workspace (e.g. ~/catkin_ws/src/my_project_1)
+      - cd ~/catkin_ws && catkin_make
+      - source devel/setup.bash
+      - Make node scripts executable (see scripts/setup_nodes.sh created in this repo)
+      - roslaunch my_project_1 my_project_1.launch
+  -->
+
+  <node pkg="my_project_1" type="qr_decoder.py" name="qr_decoder" output="screen" />
+  <node pkg="my_project_1" type="ring_detector.py" name="ring_detector" output="screen" />
+  <node pkg="my_project_1" type="tt.py" name="tt" output="screen" />
+</launch>

@@ -1,0 +1,6 @@
+numpy
+opencv-contrib-python
+pyzbar
+pykalman
+filterpy
+# Note: rospy, cv_bridge and ROS message packages are provided by your ROS distribution (install via apt)
